@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie</title>
+</head>
+<body>
+    <p></p>
+
+
+
+    <button onclick="cookieInfo()">Cookie Info</button>
+
+
+    <script>
+        function cookieInfo(){
+            let cookieInfo = document.cookie;
+
+            document.getElementsByTagName('p')[0].innerHTML=cookieInfo;
+        }
+    </script>
+</body>
+</html>

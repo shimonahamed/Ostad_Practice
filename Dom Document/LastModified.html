@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Modified</title>
+</head>
+<body>
+    <p></p>
+    <button onclick="lastModifiedInfo()"> Last Modified </button>
+    
+    <script>
+        function lastModifiedInfo(){
+            let lastModifiedInfo = document.lastModified;
+
+            document.getElementsByTagName('p')[2].innerHTML=lastModifiedInfo;
+        }
+    </script>
+</body>
+</html>

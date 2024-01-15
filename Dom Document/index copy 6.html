@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h1></h1>
+
+    <h1></h1>
+
+    <button onclick="domainInfo()">Domain Name</button>
+    <button onclick="cookieInfo()">Cookie Info</button>
+    <button onclick="lastModifiedInfo()"> Last Modified </button>
+    <button onclick="titleFun()">Title Name</button>
+    <button onclick="UrlFun()">Url</button>
+
+    <button onclick="ReplaceFun()">Replace Button</button>
+
+
+    <script>
+        function domainInfo(){
+            let domainInfo = document.domain;
+
+            document.getElementsByTagName('p')[0].innerHTML=domainInfo;
+        }
+        function cookieInfo(){
+            let cookieInfo = document.cookie;
+
+            document.getElementsByTagName('p')[1].innerHTML=cookieInfo;
+        }
+        function lastModifiedInfo(){
+            let lastModifiedInfo = document.lastModified;
+
+            document.getElementsByTagName('p')[2].innerHTML=lastModifiedInfo;
+        }
+        function titleFun(){
+            let TitleName = document.title;
+
+            document.getElementsByTagName('h1')[0].innerHTML=TitleName;
+        }
+
+        function UrlFun(){
+            let UrlInfo = document.getElementsByTagName('h1')[1].innerHTML=UrlInfo;
+        }
+        function ReplaceFun(){
+            document.open('text/HTML','replace')
+            document.write('<h1>Iam Jibon</h1>')
+
+            document.close();
+        }
+
+    </script>
+</body>
+</html>

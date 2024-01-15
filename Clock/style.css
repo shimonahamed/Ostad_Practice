@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
+.clock-container{
+    display: flex;
+}
+
+.clock-element{
+    font-size: 40px;
+    margin: 0px 10px;
+}
+.day-container{
+    display: flex
+}
+
+.day-element{
+    font-size: 40px;
+    margin: 0px 10px;
+}
+.Time{
+    font-size: 40px;
+}
