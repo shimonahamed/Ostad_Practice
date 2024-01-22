@@ -1,0 +1,23 @@
+// class inheritance
+/**সুপার কিবোর্ডস এর মাধ্যমে বাবার সম্পত্তি গুলোকে ছেলে সরাসরি কল করতে পারে? */
+
+class parent{
+    parentFun(){
+        console.log("Hello Iam Jibon ahamed")
+    }
+    
+    parentFun1(){
+        console.log("Hello Iam Shimon Ahamed")
+    }
+}
+
+class child extends parent{
+    superFun(){
+        super.parentFun()
+        super.parentFun1()
+    }
+}
+
+let obj = new child;
+
+obj.superFun();
