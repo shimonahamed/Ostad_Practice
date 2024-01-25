@@ -1,6 +1,6 @@
 
 "use strict"
 function myName(){
-    name = "jibon"
+    nam = "jibon"
 }
 myName()
